@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="practica de herramientas de bootstrap" />
+    <meta name="keywords" content="layot, components, grid" />
+    <meta name="author" content="Matias Salazar" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>CryptoFin</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-primary-subtle">
+        <div class="container">
+          <a class="navbar-brand title" href="index.html">CryptoFin</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#opcionesMenu"
+            aria-controls="opcionesMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="opcionesMenu">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/nosotros.html"
+                  >¿Quienes somos?</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/preguntasFrecuentes.html"
+                  >Preguntas frecuentes</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/error404.html"
+                  >Robo o extravio
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contactos.html">Contactos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="carouselCryptoFin" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselCryptoFin"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselCryptoFin"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselCryptoFin"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./img/banner/crypto.jpeg"
+              class="d-block w-100 bannerImg"
+              alt="cryptomonedas"
+            />
+            <div
+              class="carousel-caption d-none d-md-block text-light bg-dark bg-opacity-75 rounded-3"
+            >
+              <h5>Seguridad de nivel Bancario</h5>
+              <p>
+                Protege tus inversiones con encriptacion y autenticacion de dos
+                factores. Tu Seguridad es nuestra prioridad.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/banner/inversion.jpg"
+              class="d-block w-100 bannerImg"
+              alt="inversiones"
+            />
+            <div
+              class="carousel-caption d-none d-md-block text-light bg-dark bg-opacity-75 rounded-3"
+            >
+              <h5>Plataforma intuitiva</h5>
+              <p>
+                Disfruta de una experiencia de inversion sencilla y sin
+                compilaciones, diseñadas para todos los niveles.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/banner/atencion.jpg"
+              class="d-block w-100 bannerImg"
+              alt="atencion al cliente"
+            />
+            <div
+              class="carousel-caption d-none d-md-block text-light bg-dark bg-opacity-75 rounded-3"
+            >
+              <h5>Soporte 24/7</h5>
+              <p>
+                Estamos aquí para tí, dia y noche. Nuestro equipo de soporte te
+                asiste en cualquier momento.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselCryptoFin"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselCryptoFin"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </section>
+      <section class="container bg-body-tertiary mt-5 rounded-3">
+        <h1 class="text-center pt-3">
+          Bienvenido a CryptoFin: <br />
+          Tu puerta al Mundo de las Cryptomonedas
+        </h1>
+        <p class="text-center pb-5 text-secondary-emphasis">
+          Descubre como CryptoFin puede ayudarte a acceder y gestionar tus
+          inversiones en criptomonedas de <br />
+          manera segura y eficiente. Con tecnologia de punta y un enfoque
+          centrado en el usuario, transformamos <br />
+          la manera en que interectúas con el mundo digital.
+        </p>
+      </section>
+      <!--porque elegir cryptofin-->
+      <section class="container">
+        <article class="row justify-content-center text-center">
+          <h2 class="my-4">¿Por que elegir Cryptofin?</h2>
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                <i class="bi bi-hand-thumbs-up fs-1 text-danger"></i>
+                <h5 class="card-title">Seguridad de nivel Bancario</h5>
+                <p class="card-text">
+                  Protegemos tus activos con las mejores practicas de seguridad,
+                  incluyendo autenticacion de dos factores y encriptacion
+                  avanzada.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                <i class="bi bi-emoji-sunglasses fs-1 text-primary"></i>
+                <h5 class="card-title">Facil de usar</h5>
+                <p class="card-text">
+                  Nuestra plataforma intuitiva esta diseñada para todos, desde
+                  principiantes hasta inversores avanzados.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                <i class="bi bi-currency-dollar fs-1 text-success"></i>
+                <h5 class="card-title">Comisiones Competitivas</h5>
+                <p class="card-text">
+                  Disfruta de tarifas bajas y transparentes sin cargos ocultos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                <i class="bi bi-chat-dots fs-1 text-info bg-dark"></i>
+                <h5 class="card-title">Soporte 24/7</h5>
+                <p class="card-text">
+                  Nuestro equipo de soporte está disponible en todo momento para
+                  asistirte con cualquier consulta.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                <i class="bi bi-currency-bitcoin fs-1 text-warning bg-dark"></i>
+                <h5 class="card-title">Diversidad de criptomonedas</h5>
+                <p class="card-text">
+                  Accede a una amplia variedad de criptomonedas y emergentes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!--Banner informativo-->
+      <section class="container-fuid bg-primary-subtle text-center py-5">
+        <h2>Únete a la Revolución de las Criptomonedas con CryptoFin</h2>
+        <p class="lead">
+          Regístrate hoy y empieza a invertir en criptomonedas con la plataforma
+          más confiable y segura del mercado.
+        </p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modalRegistro">Crea tu cuenta ahora</button>
+      </section>
+      <!--Seccion app-->
+      <section class="container mt-5">
+        <div class="row">
+          <article class="col-md-5 col-lg-4 border">
+            <img
+              class="img-fluid"
+              src="./img/iphone-illustration-sec.png"
+              alt="img-iphone"
+            />
+          </article>
+          <article class="col-md-6 col-lg-8 border row">
+            <h3 class="mt-2 mb-2">Tu seguridad como prioridad</h3>
+            <p class="text-secondary-emphasis seguridad">
+              Seguimos las mejores practicas en cyberseguridad sin complicar tu
+              operacion diaria.
+            </p>
+
+            <article class="col-md-6 col-lg-6 border">
+              <div>
+                <i class="bi bi-eye ms-3 mt-2 eyes"></i>
+              </div>
+              <h4 class="ms-3 mt-2">Biometria</h4>
+              <p class="ms-3 mt-2">
+                Nuestra tecnologia te permite acceder a tu cuanta usando tu
+                huella digital o tu cara.
+              </p>
+            </article>
+            <article class="col-md-6 col-lg-6 border">
+              <div>
+                <i class="bi bi-fingerprint ms-3 mt-2 fingerprint"></i>
+              </div>
+              <h4 class="ms-3 mt-2">Segundo Factor</h4>
+              <p class="ms-3 mt-2">
+                Usamos un Token invisible para todas las opciones que hagas.
+              </p>
+            </article>
+            <article class="col-md-6 col-lg-6 border">
+              <div>
+                <i class="bi bi-puzzle ms-3 mt-2 puzzle"></i>
+              </div>
+              <h4 class="ms-3 mt-2">Personal</h4>
+              <p class="ms-3 mt-2">
+                Vas a poder ingresar desde un dispositivo a la vez a tu cuenta.
+              </p>
+            </article>
+            <article class="col-md-6 col-lg-6 border">
+              <div>
+                <i class="bi bi-robot ms-3 mt-2 robot"></i>
+              </div>
+              <h4 class="ms-3 mt-2">100% encriptado</h4>
+              <p class="ms-3 mt-2">
+                Usamos un Token invisible para todas las operaciones que hagas.
+                Todas las transacciones son encriptadas para tu mayor seguridad.
+              </p>
+            </article>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="container-fuid bg-dark-subtle text-center py-4">
+      <section class="container">
+        <div class="row">
+          <article class="iconos col-lg-12">
+            <h2>CryptoFin</h2>
+            <a href="#"
+              ><div><i class="bi bi-facebook"></i></div
+            ></a>
+            <a href="#"
+              ><div><i class="bi bi-twitter-x"></i></div
+            ></a>
+            <a href="#"
+              ><div><i class="bi bi-instagram"></i></div
+            ></a>
+          </article>
+          <article class="col-lg-3 col-md-6 mt-2">
+            <h5>Navegacion</h5>
+            <div class="cont-nav">
+              <a
+                href="#"
+                class="link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                >¿Quienes somos?</a
+              >
+              <a
+                href="#"
+                class="link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                >Precios</a
+              >
+              <a
+                href="#"
+                class="link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                >Seguridad</a
+              >
+              <a
+                href="#"
+                class="link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                >ayuda</a
+              >
+              <a
+                href="#"
+                class="link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                >Robo o extravio</a
+              >
+            </div>
+          </article>
+          <article class="col-lg-3 col-md-6 mt-2">
+            <h5>Contacto</h5>
+            <div class="cont-contacto">
+              <a
+                href="#"
+                class="link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                >Email: contacto@cryptofin.com</a
+              >
+              <a
+                href="#"
+                class="link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                >Telefono: +123 456 7890</a
+              >
+              <a
+                href="#"
+                class="link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                >Direccion: Calle ficticia 123</a
+              >
+              <a
+                href="#"
+                class="link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                >Ciudad, Pais</a
+              >
+              <a
+                href="#"
+                class="link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                >Terminos y condiciones</a
+              >
+            </div>
+          </article>
+          <article class="col-lg-3 col-md-6 mt-2">
+            <img
+              src="./img/usuariosfinancieros.png"
+              alt="#"
+              class="img-fluid"
+            />
+          </article>
+          <article class="col-lg-3 col-md-6 mt-2">
+            <h5>Unite</h5>
+            <img
+              src="./img/google-play-badge-bb.svg"
+              alt=""
+              class="mb-2 img-fluid"
+            />
+            <img src="./img/badge-apple-store.svg" alt="#" class="img-fluid" />
+          </article>
+        </div>
+      </section>
+    </footer>
+    <!--Aqui modal-->
+    <div class="modal fade" id="modalRegistro" tabindex="-1" aria-labelledby="modalRegistroLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="modalRegistroLabel">Registro</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, eius.</p>
+            <img src="./img/img-bitcoin.jpeg" class="img-fluid" alt="bitcoin">
+            <form class="my-3">
+              <div class="mb-3">
+                <label for="" class="form-label">Nombre y Apellido:</label>
+                <input type="text" class="form-control" placeholder="Ej: Matias Salazar" minlength="10" maxlength="100" required>
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Email:</label>
+                <input type="email" class="form-control" placeholder="Ej: Matias@gmail.com" minlength="10" maxlength="320" required>
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Contraseña:</label>
+                <input type="password" class="form-control" placeholder="Ej: A5gh76kK" minlength="8" maxlength="16" required>
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Repetir contraseña:</label>
+                <input type="text" class="form-control" placeholder="Ej: A5gh76kK" minlength="8" maxlength="16" required>
+              </div>
+              <button class="btn btn-primary" type="submit">Enviar</button>
+            </form>
+            <button class="btn btn-danger" data-bs-dismiss="modal">Cerrar formulario</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

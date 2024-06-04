@@ -1,0 +1,87 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.title {
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.bannerImg {
+  height: 350px;
+  object-fit: cover;
+}
+
+.seguridad {
+  font-size: 25px;
+}
+
+/*estilos iconos*/
+.eyes {
+  font-size: 35px;
+  color: rgba(236, 9, 77, 0.678);
+}
+
+.fingerprint {
+  font-size: 35px;
+  color: rgb(0, 102, 255);
+}
+
+.puzzle {
+  font-size: 35px;
+  color: rgb(0, 119, 255);
+}
+
+.robot {
+  font-size: 35px;
+  color: rgba(32, 182, 2, 0.726);
+}
+
+.iconos {
+  display: flex;
+  align-items: center;
+}
+
+.iconos div {
+  margin-left: 0.8em;
+  color: rgb(110, 110, 110);
+}
+
+.cont-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.cont-nav a {
+  color: rgb(110, 110, 110);
+}
+
+.cont-contacto {
+  display: flex;
+  flex-direction: column;
+}
+
+.cont-contacto a {
+  color: rgb(110, 110, 110);
+}
+
+footer h2 {
+  font-family: "Black Han Sans", sans-serif;
+}
+
+@media all and (min-width: 992px){
+  .bannerImg{
+    height: 400px;
+    object-position: top;
+  }
+}
+
+/*estilos Nosotros*/
+.title2{
+  font-family: "Black Han Sans", sans-serif;
+}
