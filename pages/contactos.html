@@ -71,12 +71,59 @@
       </section>
       <section class="container">
         <article class="row my-4">
-            <div class="col-12 col-md-6">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, aliquam.</p>
-            </div>
-            <div class="col-12 col-md-6 bg-body-tertiary">
-                <p>aqui agrego un mapa</p>
-            </div>
+          <div class="col-12 col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre y Apellido*</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  placeholder="juan Perez"
+                  minlength="3"
+                  maxlength="100"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email*</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="juanperez@gmail.com"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="Telefono" class="form-label">Telefono</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="Telefono"
+                  placeholder="juanperez@gmail.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="contacto" class="form-label"
+                  >Ingrese su consulta *</label
+                >
+                <textarea
+                  class="form-control"
+                  id="contacto"
+                  rows="3"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-text">
+                <p>Los campos con (*) son obligatorios</p>
+              </div>
+              <button class="btn btn-primary" type="submit">Enviar</button>
+            </form>
+          </div>
+          <div class="col-12 col-md-6 bg-body-tertiary">
+            <p>aqui agrego un mapa</p>
+          </div>
         </article>
       </section>
     </main>
